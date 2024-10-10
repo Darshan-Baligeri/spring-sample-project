@@ -1,23 +1,29 @@
 package org.easycom;
 
 public class Dev {
+    
 
-    //private Laptop laptop;
+    private Computer com;
 
-    private int age;
-
-    public Dev(int age) {
-        this.age = age;
-        System.out.println("Parameterized constructor");
+    public Computer getCom() {
+        return com;
     }
 
-    public int getAge() {
+    public void setCom(Computer com) {
+        this.com = com;
+    }
+
+    //private int age;
+
+    
+
+    /*public int getAge() {
         return age;
     }
 
     public void setAge(int age) {
         this.age = age;
-    }
+    }*/
 
     public Dev(){
         System.out.println("Dev Constructor");
@@ -26,6 +32,6 @@ public class Dev {
     public void build(){
 
         System.out.println("Working in awesome project");
-        //laptop.compile();
+        com.compile();
     }
 }
