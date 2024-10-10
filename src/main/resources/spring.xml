@@ -1,0 +1,23 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="dev" class="org.easycom.Dev">
+        <property name ="laptop" ref="lap1" />
+<!--       <property name="age" value="12"/> -->
+        <!-- <constructor-arg name = "age" index = "0" value="18" />  -->
+    </bean>
+
+    <bean id="dev1" class="org.easycom.Dev">
+
+    </bean>
+
+    <bean id="lap1" class="org.easycom.Laptop">
+
+    </bean>
+
+</beans>
+
